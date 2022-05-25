@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import DeviceStore from './store/DeviceStore';
+import UserStore from './store/UserStore';
+import NavBar from './components/NavBar';
+
+export const Context = createContext(null)
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <App />
+  <Context.Provider value={{
+    user: new UserStore(),
+    device: new DeviceStore()
+  }}>
+    <NavBar />
+    <App />
+  </Context.Provider>
+
 );
