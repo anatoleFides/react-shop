@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import DeviceStore from './store/DeviceStore';
 import UserStore from './store/UserStore';
-import NavBar from './components/NavBar';
 
 export const Context = createContext(null)
 
@@ -14,7 +13,6 @@ root.render(
     user: new UserStore(),
     device: new DeviceStore()
   }}>
-    <NavBar />
     <App />
   </Context.Provider>
 
