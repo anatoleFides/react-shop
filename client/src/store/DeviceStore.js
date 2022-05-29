@@ -26,6 +26,10 @@ export default class DeviceStore {
       { mame: '11 pro max', price: '25000', rating: '3', img: 'https://hotline.ua/img/tx/239/2391548025.jpg' }
     ]
 
+    this._selectedType = {}
+
+    this._selectedBrand = {}
+
     makeAutoObservable(this)
   }
 
@@ -41,6 +45,14 @@ export default class DeviceStore {
     this._devices = devices
   }
 
+  setSelectedType(type) {
+    this._selectedType = type
+  }
+
+  setSelectedBrand(brand) {
+    this._selectedBrand = brand
+  }
+
   get types() {
     return this._types
   }
@@ -50,5 +62,13 @@ export default class DeviceStore {
 
   get devices() {
     return this._devices
+  }
+
+  get selectedType() {
+    return this._selectedType
+  }
+
+  get selectedBrand() {
+    return this._selectedBrand
   }
 }
