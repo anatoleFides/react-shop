@@ -19,11 +19,11 @@ export default class DeviceStore {
       { id: 7, name: 'Indesit' },
     ]
     this._devices = [
-      { mame: '11 pro max', price: '25000', rating: '3', img: 'https://hotline.ua/img/tx/239/2391548025.jpg' },
-      { mame: '11 pro max', price: '25000', rating: '3', img: 'https://hotline.ua/img/tx/239/2391548025.jpg' },
-      { mame: '11 pro max', price: '25000', rating: '3', img: 'https://hotline.ua/img/tx/239/2391548025.jpg' },
-      { mame: '11 pro max', price: '25000', rating: '3', img: 'https://hotline.ua/img/tx/239/2391548025.jpg' },
-      { mame: '11 pro max', price: '25000', rating: '3', img: 'https://hotline.ua/img/tx/239/2391548025.jpg' }
+      { id: 1, name: '11 pro max', price: '25000', rating: '3', img: 'https://hotline.ua/img/tx/239/2391548025.jpg' },
+      { id: 2, name: '11 pro max', price: '25000', rating: '3', img: 'https://hotline.ua/img/tx/239/2391548025.jpg' },
+      { id: 3, name: '11 pro max', price: '25000', rating: '3', img: 'https://hotline.ua/img/tx/239/2391548025.jpg' },
+      { id: 4, name: '11 pro max', price: '25000', rating: '3', img: 'https://hotline.ua/img/tx/239/2391548025.jpg' },
+      { id: 5, name: '11 pro max', price: '25000', rating: '3', img: 'https://hotline.ua/img/tx/239/2391548025.jpg' }
     ]
 
     this._selectedType = {}
